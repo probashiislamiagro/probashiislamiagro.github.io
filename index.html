@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>প্রবাসী ইসলামী এগ্রো লিমিটেড | Probashi Islami Agro Limited</title>
+    
+    <!-- বাংলা ফন্ট -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Noto+Serif+Bengali:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- আইকন -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS কোড এখানে যুক্ত করা হলো -->
+    <style>
+        /* ================= ভেরিয়েবল ও রিসেট ================= */
+        :root {
+            --primary-green: #14532d;
+            --light-green: #f0fdf4;
+            --gold: #c9a227;
+            --gold-hover: #b08d1e;
+            --text-dark: #1f2937;
+            --text-light: #6b7280;
+            --white: #ffffff;
+            --wa-green: #25d366;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Hind Siliguri', sans-serif;
+            color: var(--text-dark);
+            line-height: 1.6;
+            background-color: var(--white);
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Noto Serif Bengali', serif;
+            font-weight: 700;
+        }
+
+        .container {
+            width: min(1140px, 90%);
+            margin: 0 auto;
+        }
+
+        .section-padding {
+            padding: 70px 0;
+        }
+
+        .bg-light {
+            background-color: var(--light-green);
+        }
+
+        .bg-green {
+            background-color: var(--primary-green);
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .text-white {
+            color: var(--white);
+        }
+
+        /* ================= হেডার ================= */
+        .header {
+            position: sticky;
+            top: 0;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            z-index: 100;
+            padding: 15px 0;
+            border-bottom: 3px solid var(--gold);
+        }
+
+        .header-wrap {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo-icon {
+            font-size: 40px;
+            color: var(--primary-green);
+            background: var(--gold);
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+        }
+
+        .logo-text h1 {
+            font-size: 24px;
+            color: var(--primary-green);
+            line-height: 1.2;
+        }
+
+        .logo-text p {
+            font-size: 14px;
+            color: var(--gold);
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        .top-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--primary-green);
+            color: var(--white);
+            padding: 10px 20px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .top-btn:hover {
+            background: var(--gold);
+        }
+
+        /* ================= হিরো ================= */
+        .hero {
+            background: linear-gradient(135deg, #e8f5e9 0%, #fffde7 100%);
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .hero-title {
+            color: var(--primary-green);
+            font-size: 22px;
+            margin-bottom: 20px;
+        }
+
+        .main-slogan {
+            font-size: clamp(28px, 4vw, 42px);
+            color: var(--primary-green);
+            margin-bottom: 20px;
+            line-height: 1.4;
+        }
+
+        .sub-slogan {
+            font-size: 20px;
+            color: var(--gold);
+            font-weight: 600;
+            margin-bottom: 40px;
+        }
+
+        .hero-btns {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        /* ================= সাধারণ বাটন ================= */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 14px 28px;
+            border-radius: 50px;
+            font-size: 16px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: 0.3s;
+            cursor: pointer;
+            border: none;
+        }
+
+        .btn-gold {
+            background: var(--gold);
+            color: var(--white);
+            box-shadow: 0 4px 15px rgba(201, 162, 39, 0.4);
+        }
+
+        .btn-gold:hover {
+            background: var(--gold-hover);
+            transform: translateY(-3px);
+        }
+
+        .btn-green {
+            background: var(--primary-green);
+            color: var(--white);
+            box-shadow: 0 4px 15px rgba(20, 83, 45, 0.4);
+        }
+
+        .btn-green:hover {
+            background: #0f3d21;
+            transform: translateY(-3px);
+        }
+
+        /* ================= সেকশন হেডিং ================= */
+        .section-head {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-head h2 {
+            font-size: 32px;
+            color: var(--primary-green);
+            margin-bottom: 10px;
+        }
+
+        .section-head p {
+            color: var(--text-light);
+            font-size: 18px;
+        }
+
+        .text-white h2, .text-white p {
+            color: var(--white);
+        }
+
+        /* ================= অঙ্গীকার ================= */
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: start;
+        }
+
+        .about-text p {
+            margin-bottom: 15px;
+            font-size: 17px;
+            text-align: justify;
+        }
+
+        .commitment-list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .c-item {
+            display: flex;
+            gap: 15px;
+            background: var(--white);
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            border-left: 4px solid var(--gold);
+        }
+
+        .c-item i {
+            color: var(--primary-green);
+            font-size: 20px;
+            margin-top: 3px;
+        }
+
+        /* ================= প্রজেক্ট ================= */
+        .project-cards {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+
+        .card {
+            background: var(--white);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            border-top: 5px solid var(--primary-green);
+        }
+
+        .highlight-card {
+            border-top-color: var(--gold);
+            background: linear-gradient(to bottom right, #ffffff, #fffde7);
+        }
+
+        .card h3 {
+            color: var(--text-dark);
+            font-size: 20px;
+        }
+
+        .card h4 {
+            color: var(--primary-green);
+            font-size: 26px;
+            margin: 10px 0 15px;
+        }
+
+        .highlight-card h4 {
+            color: var(--gold);
+        }
+
+        /* ================= শেয়ার ================= */
+        .share-info {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 50px;
+            flex-wrap: wrap;
+        }
+
+        .share-box {
+            background: var(--light-green);
+            padding: 20px 40px;
+            border-radius: 15px;
+            text-align: center;
+            border: 2px solid var(--primary-green);
+        }
+
+        .gold-box {
+            border-color: var(--gold);
+            background: #fffde7;
+        }
+
+        .share-box p {
+            font-size: 16px;
+            color: var(--text-light);
+        }
+
+        .share-box h3 {
+            font-size: 32px;
+            color: var(--primary-green);
+        }
+
+        .gold-box h3 {
+            color: var(--gold);
+        }
+
+        .sub-heading {
+            text-align: center;
+            font-size: 24px;
+            color: var(--primary-green);
+            margin-bottom: 30px;
+        }
+
+        .distribution-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .dist-card {
+            background: var(--white);
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            border-top: 6px solid;
+        }
+
+        .dist-card h4 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .percent {
+            display: block;
+            font-size: 36px;
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: 5px;
+        }
+
+        /* ================= ইউনিট পরিচিতি ================= */
+        .tier-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 20px;
+        }
+
+        .tier-card {
+            background: var(--white);
+            padding: 30px 20px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: 0.3s;
+        }
+
+        .tier-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+
+        .tier-card i {
+            font-size: 40px;
+            color: var(--gold);
+            margin-bottom: 15px;
+        }
+
+        .tier-card h3 {
+            font-size: 20px;
+            color: var(--primary-green);
+            margin-bottom: 10px;
+        }
+
+        .tier-card p {
+            font-size: 18px;
+            font-weight: 700;
+        }
+
+        /* ================= মুদারাবা ও আইনি ================= */
+        .legal-grid {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr;
+            gap: 40px;
+        }
+
+        .mudaraba h2, .certificates h2 {
+            font-size: 26px;
+            color: var(--primary-green);
+            margin-bottom: 20px;
+        }
+
+        .mudaraba ul {
+            list-style: none;
+        }
+
+        .mudaraba ul li {
+            background: var(--light-green);
+            margin-bottom: 10px;
+            padding: 15px;
+            border-radius: 8px;
+            position: relative;
+            padding-left: 40px;
+        }
+
+        .mudaraba ul li::before {
+            content: '\f00c';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            position: absolute;
+            left: 15px;
+            top: 17px;
+            color: var(--primary-green);
+        }
+
+        .cert-box {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            background: var(--white);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            margin-bottom: 15px;
+            border-left: 4px solid var(--gold);
+        }
+
+        .cert-box i {
+            font-size: 30px;
+            color: var(--primary-green);
+        }
+
+        /* ================= যোগাযোগ ================= */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+
+        .bank-card, .office-card {
+            background: var(--white);
+            padding: 30px;
+            border-radius: 15px;
+            color: var(--text-dark);
+        }
+
+        .bank-card h3, .office-card h3 {
+            color: var(--primary-green);
+            margin-bottom: 20px;
+            font-size: 22px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .bank-card p, .office-card p {
+            margin-bottom: 12px;
+            font-size: 16px;
+        }
+
+        .action-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin: 25px 0;
+        }
+
+        .btn-whatsapp {
+            background: var(--wa-green);
+            color: var(--white);
+            justify-content: center;
+        }
+
+        .btn-whatsapp:hover {
+            background: #1ebc57;
+        }
+
+        .btn-email {
+            background: #ea4335;
+            color: var(--white);
+            justify-content: center;
+        }
+
+        .btn-email:hover {
+            background: #d33426;
+        }
+
+        .btn-call {
+            background: var(--gold);
+            color: var(--white);
+            justify-content: center;
+        }
+
+        .btn-call:hover {
+            background: var(--gold-hover);
+        }
+
+        .map-container {
+            margin-top: 20px;
+        }
+
+        /* ================= ফুটার ================= */
+        .footer {
+            background: #0f3d21;
+            color: var(--white);
+            padding: 30px 0;
+            border-top: 4px solid var(--gold);
+        }
+
+        .footer p {
+            margin-bottom: 5px;
+            opacity: 0.8;
+        }
+
+        /* ================= রেসপন্সিভ (মোবাইল) ================= */
+        @media (max-width: 768px) {
+            .header-wrap {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .logo-area {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .hero {
+                padding: 60px 0;
+            }
+
+            .about-grid, .project-cards, .legal-grid, .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-btns {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .btn {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .share-info {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- হেডার -->
+    <header class="header">
+        <div class="container header-wrap">
+            <div class="logo-area">
+                <!-- লোগোর জন্য প্লেসহোল্ডার -->
+                <div class="logo-icon"><i class="fa-solid fa-leaf"></i></div>
+                <div class="logo-text">
+                    <h1>প্রবাসী ইসলামী এগ্রো লিমিটেড</h1>
+                    <p>Probashi Islami Agro Limited</p>
+                </div>
+            </div>
+            <div class="header-contact">
+                <a href="tel:01840914444" class="top-btn"><i class="fa-solid fa-phone"></i> ০১৮৪০-৯১৪৪৪৪</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- হিরো সেকশন -->
+    <section class="hero">
+        <div class="container hero-content">
+            <h2 class="hero-title">বিসমিল্লাহির রাহমানির রাহিম</h2>
+            <h1 class="main-slogan">"আমরা শুধু বিনিয়োগ গ্রহণ করতে চাই না, আমরা মানুষের বিশ্বাসের যোগ্য একটি প্রতিষ্ঠান গড়ে তুলতে চাই।"</h1>
+            <p class="sub-slogan">খাদ্য • শিক্ষা • স্বাস্থ্য — মানবকল্যাণে, সমৃদ্ধির পথে।</p>
+            <div class="hero-btns">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfeFfKr15LHIC1uH8pyFIaCeXQykiJENzrmiPjBXW26kKcCMg/viewform?usp=preview" target="_blank" class="btn btn-gold"><i class="fa-solid fa-hand-holding-dollar"></i> বিনিয়োগের জন্য আবেদন</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSciFvXZ7ve-RNUflbsC8g8IehGOGd734TvolH0SyDNFQmK1HQ/viewform?usp=preview" target="_blank" class="btn btn-green"><i class="fa-solid fa-briefcase"></i> চাকরির জন্য আবেদন</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- অঙ্গীকার সেকশন -->
+    <section class="about section-padding">
+        <div class="container">
+            <div class="section-head">
+                <h2>আমাদের অঙ্গীকার</h2>
+                <p>বিশ্বাস, সততা ও স্বচ্ছতার ভিত্তিতে সমৃদ্ধির পথে</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p><strong>সম্মানিত বিনিয়োগকারী ও শুভাকাঙ্ক্ষীবৃন্দ,</strong></p>
+                    <p>আসসালামু আলাইকুম ওয়া রহমাতুল্লাহ। প্রবাসী ইসলামী এগ্রো লিমিটেড শুধু একটি ব্যবসায়িক প্রতিষ্ঠানের নাম নয়; এটি একটি স্বপ্ন, একটি দায়িত্ব এবং মানুষের বিশ্বাসকে সম্মান করার অঙ্গীকার। আমাদের মূল লক্ষ্য হলো ইসলামী শরিয়াহর নীতিমালা অনুসরণ করে কৃষি, পোল্ট্রি ও প্রাণিসম্পদ খাতে একটি সুপরিকল্পিত ও টেকসই প্রতিষ্ঠান গড়ে তোলা।</p>
+                </div>
+                <div class="commitment-list">
+                    <div class="c-item"><i class="fa-solid fa-check-circle"></i> <div><strong>সততা ও স্বচ্ছতা:</strong> বিনিয়োগের অর্থ কোথায় ব্যয় হচ্ছে তার যথাসম্ভব স্বচ্ছ তথ্য প্রদান।</div></div>
+                    <div class="c-item"><i class="fa-solid fa-check-circle"></i> <div><strong>শরিয়াহভিত্তিক পরিচালনা:</strong> আল-মুদারাবা নীতিমালা ও শরিয়াহ অনুসরণ করে পরিচালনা।</div></div>
+                    <div class="c-item"><i class="fa-solid fa-check-circle"></i> <div><strong>জবাবদিহিতা:</strong> আয়-ব্যয় ও প্রকল্পের অগ্রগতির হিসাব তুলে ধরা।</div></div>
+                    <div class="c-item"><i class="fa-solid fa-check-circle"></i> <div><strong>বিনিয়োগকারীর অধিকার:</strong> চুক্তি অনুযায়ী প্রত্যেকের স্বার্থকে গুরুত্ব প্রদান।</div></div>
+                    <div class="c-item"><i class="fa-solid fa-check-circle"></i> <div><strong>দীর্ঘমেয়াদি পরিকল্পনা:</strong> সাময়িক লাভের চেয়ে টেকসই প্রতিষ্ঠান গড়ে তোলা।</div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- প্রজেক্ট সেকশন -->
+    <section class="project section-padding bg-light">
+        <div class="container">
+            <div class="section-head">
+                <h2>পোল্ট্রি এন্ড লেয়ার প্রজেক্ট</h2>
+                <p>প্রকল্পের মূল্য: <strong>১৫০০ কোটি টাকা</strong></p>
+            </div>
+            <div class="project-cards">
+                <div class="card">
+                    <h3>স্থায়ী বিনিয়োগ</h3>
+                    <h4>৪০০ কোটি টাকা</h4>
+                    <p>জমি, সেট খাঁচা, যন্ত্রপাতি ও আনুষঙ্গিক খরচ। প্রত্যেক বছর চার মাস পর পর লাভ পাবে এবং ভ্যালু বাড়বে শেয়ারের মতো।</p>
+                </div>
+                <div class="card highlight-card">
+                    <h3>বাৎসরিক বিনিয়োগ</h3>
+                    <h4>১১০০ কোটি টাকা</h4>
+                    <p>প্রতি তিন মাস পর পর ইউনিটে লাভ প্রদান করা হবে। ৪০ লক্ষ লেয়ার মুরগি ও পেরেন স্টক পালন এবং মার্কেটিং খরচ।</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ইউনিট ও শেয়ার সেকশন -->
+    <section class="shares section-padding">
+        <div class="container">
+            <div class="section-head">
+                <h2>শেয়ার ও বিনিয়োগ ইউনিট</h2>
+            </div>
+            <div class="share-info">
+                <div class="share-box">
+                    <p>প্রত্যেকটি শেয়ারের মূল্য</p>
+                    <h3>১০,০০০৳</h3>
+                </div>
+                <div class="share-box gold-box">
+                    <p>প্রত্যেকটি ইউনিটের মূল্য (৫% প্রসেসিংসহ)</p>
+                    <h3>১০,৫০০৳</h3>
+                </div>
+            </div>
+            
+            <h3 class="sub-heading">ইউনিট বণ্টন (মোট ১৫,০০,০০০ পিছ)</h3>
+            <div class="distribution-grid">
+                <div class="dist-card" style="border-top-color: #1f6f43;">
+                    <h4>প্রবাসী</h4>
+                    <span class="percent">৫০%</span>
+                    <p>৭,৫০,০০০ পিছ</p>
+                </div>
+                <div class="dist-card" style="border-top-color: #c9a227;">
+                    <h4>কৃষক</h4>
+                    <span class="percent">৩০%</span>
+                    <p>৪,৫০,০০০ পিছ</p>
+                </div>
+                <div class="dist-card" style="border-top-color: #2b7a78;">
+                    <h4>কর্মকর্তা কর্মচারী</h4>
+                    <span class="percent">২০%</span>
+                    <p>৩,০০,০০০ পিছ</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ইউনিট পরিচিতি -->
+    <section class="tiers section-padding bg-light">
+        <div class="container">
+            <div class="section-head">
+                <h2>ইউনিট পরিচিতি (মেয়াদ: ২৫ বছর)</h2>
+                <p>প্রথম ৬ মাস লাভ প্রদান করা হবে না</p>
+            </div>
+            <div class="tier-grid">
+                <div class="tier-card"><i class="fa-solid fa-seedling"></i><h3>মাটি</h3><p>১০,০০০৳</p></div>
+                <div class="tier-card"><i class="fa-solid fa-leaf"></i><h3>সবুজ</h3><p>৫০,০০০৳</p></div>
+                <div class="tier-card"><i class="fa-solid fa-gem"></i><h3>প্লাটিনাম</h3><p>১,০০,০০০৳</p></div>
+                <div class="tier-card"><i class="fa-solid fa-crown"></i><h3>গোল্ড</h3><p>২,৫০,০০০৳</p></div>
+                <div class="tier-card"><i class="fa-solid fa-diamond"></i><h3>ডায়মন্ড</h3><p>৫,০০,০০০৳</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- মুদারাবা চুক্তি ও আইনি বৈধতা -->
+    <section class="legal section-padding">
+        <div class="container">
+            <div class="legal-grid">
+                <div class="mudaraba">
+                    <h2>মুদারাবা চুক্তি</h2>
+                    <ul>
+                        <li>হিসাবধারী গ্রাহক হলেন <strong>সাহিব আল-মাল</strong> (অর্থের মালিক) এবং কোম্পানি <strong>মুদারিব</strong>।</li>
+                        <li>ইসলামী শরিয়াহ বর্ণিত নীতিমালার ভিত্তিতে কোম্পানি অর্থ গ্রহণ করে এবং শরিয়াহ সম্মতভাবে বিনিয়োগ করে।</li>
+                        <li>প্রাপ্ত আয়ের কমপক্ষে <strong>৬০%</strong> মুদারাবা হিসাবদারদের মধ্যে ওয়েটেজের ভিত্তিতে বণ্টন করা হবে।</li>
+                        <li>বিনিয়োগে লোকসান হলে মুদারাবা হিসাবধারীরা তা বহন করবেন।</li>
+                    </ul>
+                </div>
+                <div class="certificates">
+                    <h2>আইনি বৈধতা</h2>
+                    <div class="cert-box">
+                        <i class="fa-solid fa-certificate"></i>
+                        <div>
+                            <h4>RJSC Incorporation</h4>
+                            <p>নং: CH-15592/2023</p>
+                        </div>
+                    </div>
+                    <div class="cert-box">
+                        <i class="fa-solid fa-file-invoice"></i>
+                        <div>
+                            <h4>NBR TIN সার্টিফিকেট</h4>
+                            <p>TIN: 186635704862</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ব্যাংক ও যোগাযোগ সেকশন -->
+    <section class="contact section-padding bg-green" id="contact">
+        <div class="container">
+            <div class="section-head text-white">
+                <h2>যোগাযোগ ও ব্যাংক তথ্য</h2>
+            </div>
+            <div class="contact-grid">
+                <!-- ব্যাংক ডিটেইলস -->
+                <div class="bank-card">
+                    <h3><i class="fa-solid fa-building-columns"></i> ব্যাংক একাউন্ট</h3>
+                    <p><strong>ব্যাংকের নাম:</strong> অগ্রণী ব্যাংক পিএলসি</p>
+                    <p><strong>অ্যাকাউন্টের নাম:</strong> প্রবাসী ইসলামী এগ্রো লিমিটেড</p>
+                    <p><strong>শাখা:</strong> কসবা শাখা ৯৫১৯</p>
+                    <p><strong>অ্যাকাউন্ট নম্বর:</strong> 0200021755507</p>
+                    <p><strong>মোবাইল:</strong> 01840914444</p>
+                </div>
+
+                <!-- অফিস ও বাটন -->
+                <div class="office-card">
+                    <h3><i class="fa-solid fa-location-dot"></i> অস্থায়ী হেড অফিস</h3>
+                    <p>কসবা সৈয়দাবাদ বাস স্ট্যান্ড সংলগ্ন, ইউনিয়ন- বিনাউটি, ডাকঘর - সৈয়দাবাদ (৩৪৫২), উপজেলা-কসবা, জেলা-ব্রাহ্মণবাড়িয়া, বাংলাদেশ।</p>
+                    
+                    <div class="action-buttons">
+                        <a href="https://wa.me/8801840914444" target="_blank" class="btn btn-whatsapp"><i class="fa-brands fa-whatsapp"></i> WhatsApp করুন</a>
+                        <a href="mailto:probashiislamiagrolimited@gmail.com" class="btn btn-email"><i class="fa-solid fa-envelope"></i> ইমেইল করুন</a>
+                        <a href="tel:01840914444" class="btn btn-call"><i class="fa-solid fa-phone"></i> কল করুন</a>
+                    </div>
+
+                    <!-- গুগল ম্যাপ -->
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.5075969086713!2d91.12157431543366!3d23.739250984581263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x375477263d88484f%3A0x7d1aee922e550f5b!2sKasba%2C%20Brahmanbaria!5e0!3m2!1sen!2sbd!4v1695812522384!5m2!1sen!2sbd" width="100%" height="200" style="border:0; border-radius: 10px;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ফুটার -->
+    <footer class="footer">
+        <div class="container text-center">
+            <p>&copy; ২০২৪ প্রবাসী ইসলামী এগ্রো লিমিটেড। সর্বস্বত্ব সংরক্ষিত।</p>
+            <p>আল্লাহ আমাদের সকলের প্রচেষ্টাকে কবুল করুন। আমিন।</p>
+        </div>
+    </footer>
+
+</body>
+</html>
